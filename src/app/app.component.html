@@ -1,2 +1,17 @@
-<app-square [value]="'X'"></app-square>
-<router-outlet></router-outlet>
+<nb-layout>
+
+  <nb-layout-header fixed>
+    <h1>Tic Tac Toe <span>by Aymane</span></h1>
+  </nb-layout-header>
+
+  <nb-layout-column>
+
+    <app-board></app-board>
+    <router-outlet></router-outlet>
+  </nb-layout-column>
+
+  <nb-layout-footer fixed>
+  <!-- Insert footer here -->
+  </nb-layout-footer>
+
+</nb-layout>
